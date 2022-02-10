@@ -1,0 +1,141 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: rgb(52, 52, 52);
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background-color: rgb(27, 18, 18);
+}
+
+
+.logo {
+    width: 55px;
+    height: 55px;
+    animation: eth 2s linear infinite alternate;
+}
+
+.collapse {
+    justify-content: center;
+}
+
+.titulo {
+    color: black;
+}
+
+.nav-link {
+    color: gray;
+    font-size: 18px;
+}
+
+.nav-link:hover {
+    color: rgb(255, 165, 0);
+}
+
+.persona {
+    color: gray;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.persona:hover {
+    color: rgb(255, 165, 0);
+}
+
+.carro {
+    color: gray;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.carro:hover {
+    color: rgb(255, 165, 0);
+}
+
+
+#productos {
+    display: grid;
+    grid-template-columns: 60vh 60vh 60vh;
+    justify-content: center;
+}
+
+
+.articulo {
+    padding: 12px;
+    margin: 5px;
+    background-color: rgb(40, 40, 43);
+    text-align: center;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 30px;
+    box-shadow: 3px 3px black;
+}
+
+
+h2 {
+    padding: 12px;
+    font-size: 20px;
+    background-color: rgb(255, 165, 0);
+    border-radius: 30px;
+}
+
+p {
+    margin-top: 20px;
+    text-align: center;
+    color: gray;
+}
+
+.imagenes {
+    height: 200px;
+    margin-top: 20px;
+    width: 200px;
+    transition: 0.5s;
+}
+
+.imagenes:hover {
+    width: 225px;
+    height: 225px;
+}
+
+@media (max-width:768px) {
+    #productos {
+        grid-template-columns: 45vh 45vh 45vh;
+    }
+}
+
+@media (max-width:600px) {
+    #productos {
+        display: flex;
+        flex-flow: wrap;
+    }
+}
+
+
+@keyframes eth {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.formulario {
+    padding: 20px;
+    background-color: rgb(52, 52, 52);
+}
+
+.form-label {
+    color:rgb(255, 165, 0) ;
+}
